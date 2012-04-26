@@ -284,7 +284,6 @@ NSString* const kIMBiPhotoNodeObjectTypeFace  = @"faces";
 
 
 #pragma mark -
-#pragma mark IMBParserProtocol
 
 //----------------------------------------------------------------------------------------------------------------------
 //

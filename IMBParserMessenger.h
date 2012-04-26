@@ -121,7 +121,7 @@
 
 - (IMBParser*) newParser;
 
-// The following four methods correspond to the ones in the IMBParserProtocol. Here the work is simply 
+// The following four methods correspond to the ones in the IMBParser. Here the work is simply 
 // delegated to the appropriate IMBParser instance. Should NOT be overridden in subclasses...
 
 - (NSMutableArray*) unpopulatedTopLevelNodes:(NSError**)outError;
