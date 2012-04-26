@@ -72,11 +72,16 @@
 
 #pragma mark 
 
-@protocol IMBParserProtocol
+@interface IMBParser : NSObject
+{
+	@private
+	
+	NSString* _identifier;
+	NSString* _mediaType;
+	NSURL* _mediaSource;
+}
 
 // Together these parameters uniquely specify a parser instance. The values are taken from IMBParserFacrtory...
-
-@required
 
 @property (copy) NSString* identifier;	
 @property (copy) NSString* mediaType;	
@@ -88,8 +93,6 @@
 // once at startup to create an empty toplevel node, while the second method may be called multiple times. The
 // third method has a generic implementation that may be sufficient for most subclasses...
 
-@required
-
 - (IMBNode*) unpopulatedTopLevelNode:(NSError**)outError;
 - (void) populateNode:(IMBNode*)inNode error:(NSError**)outError;
 - (IMBNode*) reloadNodeTree:(IMBNode*)inNode error:(NSError**)outError;
@@ -97,28 +100,9 @@
 // The following three methods are used to load thumbnails or metadata, or create a security-scoped bookmark for  
 // full media file access. They are called on the XPC service side...
 
-@required
-
 - (id) thumbnailForObject:(IMBObject*)inObject error:(NSError**)outError;
 - (NSDictionary*) metadataForObject:(IMBObject*)inObject error:(NSError**)outError;
 - (NSData*) bookmarkForObject:(IMBObject*)inObject error:(NSError**)outError;
-
-@end
-
-
-//----------------------------------------------------------------------------------------------------------------------
-
-
-#pragma mark 
-
-@interface IMBParser : NSObject <IMBParserProtocol>
-{
-	@private
-	
-	NSString* _identifier;
-	NSString* _mediaType;
-	NSURL* _mediaSource;
-}
 
 // Helpers for subclasses...
 
