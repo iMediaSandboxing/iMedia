@@ -112,6 +112,17 @@
 		30FD64671546AF6E0036BDE2 /* NSPasteboard+iMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD64651546AF6E0036BDE2 /* NSPasteboard+iMedia.m */; };
 		30FD646B1546BAE90036BDE2 /* IMBApertureHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA064112368388009072AE /* IMBApertureHeaderViewController.m */; };
 		30FFEBFE150A0AA70009C1D0 /* im.edia.iPhoto.xpc in Copy XPCServices */ = {isa = PBXBuildFile; fileRef = 30FFEBEC150A08DB0009C1D0 /* im.edia.iPhoto.xpc */; };
+		65E26F8217136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8317136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8417136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8517136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8617136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8717136803000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8817136804000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8917136804000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8A17136829000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8B17136829000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
+		65E26F8C1713682A000994C3 /* iMedia.stub in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E26F7E17136803000994C3 /* iMedia.stub */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		8F47B39110C416050013ED25 /* IMBOrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F47B38F10C416050013ED25 /* IMBOrderedDictionary.h */; };
 		8F47B39210C416050013ED25 /* IMBOrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F47B39010C416050013ED25 /* IMBOrderedDictionary.m */; };
@@ -208,7 +219,6 @@
 		D054AFEB152984C300EBFA1C /* IMBGarageBandParserMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = D054AFE9152984C300EBFA1C /* IMBGarageBandParserMessenger.m */; };
 		D054AFF0152984FA00EBFA1C /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D054AFF5152984FA00EBFA1C /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D054AFF6152984FA00EBFA1C /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D054AFF7152984FA00EBFA1C /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D054AFFF1529927E00EBFA1C /* im.edia.GarageBand.xpc in Copy XPCServices */ = {isa = PBXBuildFile; fileRef = D054AFFD152984FA00EBFA1C /* im.edia.GarageBand.xpc */; };
 		D054B0011529A65100EBFA1C /* IMBGarageBandParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D02D17591081CF3B00142E8A /* IMBGarageBandParser.m */; };
@@ -219,30 +229,23 @@
 		D05D3993152A280F00E30C43 /* IMBMainThreadProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D08E8D831019EB4D005D8614 /* IMBMainThreadProxy.m */; };
 		D05D399F152ACD1300E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D39A4152ACD1300E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39A5152ACD1300E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39A6152ACD1300E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D39B0152ACD2400E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D39B5152ACD2400E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39B6152ACD2400E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39B7152ACD2400E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D39C1152ACD3300E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D39C6152ACD3300E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39C7152ACD3300E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39C8152ACD3300E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D39D2152ACD5E00E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D39D7152ACD5E00E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39D8152ACD5E00E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39D9152ACD5E00E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D39E3152ACD6800E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D39E8152ACD6800E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39E9152ACD6800E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39EA152ACD6800E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D39F9152ACD8800E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D39FA152ACD8800E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D39FB152ACD8800E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D05D3A07152AD0D000E30C43 /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D05D3A0C152AD0D000E30C43 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D05D3A0D152AD0D000E30C43 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D05D3A0E152AD0D000E30C43 /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D065383615EFDC810081D8D3 /* IMBAccessRightsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D065383515EFDC810081D8D3 /* IMBAccessRightsViewController.xib */; };
 		D0680C3C1518CCCE00CED506 /* im.edia.Folder.xpc in Copy XPCServices */ = {isa = PBXBuildFile; fileRef = D0E96D021518C9BF004F3EE7 /* im.edia.Folder.xpc */; };
@@ -276,7 +279,6 @@
 		D08E8D7E1019EAB8005D8614 /* IMBFNSubscribeFileWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D08E8D7C1019EAB8005D8614 /* IMBFNSubscribeFileWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08E8D811019EB09005D8614 /* IMBFSEventsWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D08E8D7F1019EB09005D8614 /* IMBFSEventsWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08E8D861019EB4D005D8614 /* IMBMainThreadProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D08E8D841019EB4D005D8614 /* IMBMainThreadProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D08E8FB7101A0F0D005D8614 /* iMedia.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D08F7B72152309A800505395 /* IMBImageObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C2DD0C1025905A001B1198 /* IMBImageObjectViewController.m */; };
 		D08F7B73152309A800505395 /* IMBAudioObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08070C210442CE100891137 /* IMBAudioObjectViewController.m */; };
 		D08F7B74152309A800505395 /* IMBMovieObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D08070BE10442CD700891137 /* IMBMovieObjectViewController.m */; };
@@ -466,9 +468,7 @@
 		D0E96CE215189FAC004F3EE7 /* IMBFolderParserMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E96CE015189FAC004F3EE7 /* IMBFolderParserMessenger.m */; };
 		D0E96CE61518A297004F3EE7 /* IMBImageFolderParserMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E96CE41518A296004F3EE7 /* IMBImageFolderParserMessenger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0E96CE71518A297004F3EE7 /* IMBImageFolderParserMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E96CE51518A297004F3EE7 /* IMBImageFolderParserMessenger.m */; };
-		D0E96CFA1518C9BF004F3EE7 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D0E96D1C104410BD0015979F /* IMBPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = D0E96D1A104410BD0015979F /* IMBPanelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0F207C7150A23BA007E6FA2 /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D0F2DB9B1098262D004280C1 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F2DB941098262D004280C1 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0F2DB9C1098262D004280C1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F2DB951098262D004280C1 /* FMDatabase.m */; };
 		D0F2DB9D1098262D004280C1 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F2DB961098262D004280C1 /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -482,7 +482,6 @@
 		D0F2DDBB15247B080059DF8D /* IMBiTunesMovieParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FC9517108213A800973FEE /* IMBiTunesMovieParser.m */; };
 		D0F2DDBE152485130059DF8D /* SBServiceMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D08109A7151A052300201850 /* SBServiceMain.m */; };
 		D0F2DDC3152485130059DF8D /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09930FC1010FF9700C527B7 /* Quartz.framework */; };
-		D0F2DDC4152485130059DF8D /* iMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC2EF5B0486A6940098B216 /* iMedia.framework */; };
 		D0F2DDC5152485130059DF8D /* XPCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3089F94A151C8FDD00D56DC0 /* XPCKit.framework */; };
 		D0F2DDCF152486360059DF8D /* im.edia.iTunes.xpc in Copy XPCServices */ = {isa = PBXBuildFile; fileRef = D0F2DDCB152485130059DF8D /* im.edia.iTunes.xpc */; };
 		D0FC9518108213A800973FEE /* IMBiTunesMovieParser.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FC9516108213A800973FEE /* IMBiTunesMovieParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -521,6 +520,149 @@
 		FC14841E1598887700F6FDB8 /* IMBFlickrParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FC30D0251309777300463E52 /* IMBFlickrParser.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		65E26F2517135C95000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EEDD0CF13DE9FAB00D5AEC3;
+			remoteInfo = XPCKit;
+		};
+		65E26F2717135C95000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EEDD02813DD485400D5AEC3;
+			remoteInfo = libXPCKit;
+		};
+		65E26F2917135C95000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EEDD05913DD48BB00D5AEC3;
+			remoteInfo = TestApp;
+		};
+		65E26F2B17135C95000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EEDD07513DD48D800D5AEC3;
+			remoteInfo = TestService;
+		};
+		65E26F2D17135C95000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1EEDD03C13DD485400D5AEC3;
+			remoteInfo = XPCKitTests;
+		};
+		65E26F3517135C97000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A8666490F9593B200325E1C;
+			remoteInfo = "ObjectiveFlickr (framework)";
+		};
+		65E26F3717135C97000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6ABF72E60F939BE600B9179E;
+			remoteInfo = "ObjectiveFlickr (library)";
+		};
+		65E26F3B17135D1A000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEDD0CE13DE9FAB00D5AEC3;
+			remoteInfo = XPCKit;
+		};
+		65E26F4517135D21000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8666480F9593B200325E1C;
+			remoteInfo = "ObjectiveFlickr (framework)";
+		};
+		65E26F8D1713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0E96CEE1518C9BF004F3EE7;
+			remoteInfo = im.edia.Folder;
+		};
+		65E26F8F1713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30FFEBEB150A08DB0009C1D0;
+			remoteInfo = im.edia.iPhoto;
+		};
+		65E26F911713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D399D152ACD1300E30C43;
+			remoteInfo = im.edia.Aperture;
+		};
+		65E26F931713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D39AE152ACD2400E30C43;
+			remoteInfo = im.edia.Lightroom;
+		};
+		65E26F951713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D39BF152ACD3300E30C43;
+			remoteInfo = im.edia.Flickr;
+		};
+		65E26F971713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0F2DDBC152485130059DF8D;
+			remoteInfo = im.edia.iTunes;
+		};
+		65E26F991713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D054AFEE152984FA00EBFA1C;
+			remoteInfo = im.edia.GarageBand;
+		};
+		65E26F9B1713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D39D0152ACD5E00E30C43;
+			remoteInfo = im.edia.Safari;
+		};
+		65E26F9D1713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D39E1152ACD6800E30C43;
+			remoteInfo = im.edia.Firefox;
+		};
+		65E26F9F1713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D3A05152AD0D000E30C43;
+			remoteInfo = im.edia.Chrome;
+		};
+		65E26FA11713685B000994C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05D39F2152ACD8800E30C43;
+			remoteInfo = im.edia.FSEvents;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		30FFEBFD150A09780009C1D0 /* Copy XPCServices */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -549,7 +691,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D08E8FB7101A0F0D005D8614 /* iMedia.framework in Copy Frameworks */,
 				D0904DDA152D6FBD003FDD08 /* XPCKit.framework in Copy Frameworks */,
 				D0904DDB152D6FC4003FDD08 /* ObjectiveFlickr.framework in Copy Frameworks */,
 			);
@@ -640,6 +781,9 @@
 		30FFEBEC150A08DB0009C1D0 /* im.edia.iPhoto.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = im.edia.iPhoto.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		30FFEBEE150A08DB0009C1D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32DBCF5E0370ADEE00C91783 /* iMedia.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMedia.pch; sourceTree = "<group>"; };
+		65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XPCKit.xcodeproj; path = XPCKit/XPCKit.xcodeproj; sourceTree = "<group>"; };
+		65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ObjectiveFlickr.xcodeproj; path = ObjectiveFlickr/ObjectiveFlickr.xcodeproj; sourceTree = "<group>"; };
+		65E26F7E17136803000994C3 /* iMedia.stub */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = iMedia.stub; path = SandBoxingKit/iMedia.stub; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* iMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F47B38F10C416050013ED25 /* IMBOrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBOrderedDictionary.h; sourceTree = "<group>"; };
@@ -1059,8 +1203,8 @@
 			files = (
 				D0904DE9152D717E003FDD08 /* Foundation.framework in Frameworks */,
 				D0E69CD0151C5576002FE181 /* Quartz.framework in Frameworks */,
-				D0F207C7150A23BA007E6FA2 /* iMedia.framework in Frameworks */,
 				3089F94D151C91E400D56DC0 /* XPCKit.framework in Frameworks */,
+				65E26F8B17136829000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1087,8 +1231,8 @@
 			files = (
 				D0904DEE152D7181003FDD08 /* Foundation.framework in Frameworks */,
 				D054AFF5152984FA00EBFA1C /* Quartz.framework in Frameworks */,
-				D054AFF6152984FA00EBFA1C /* iMedia.framework in Frameworks */,
 				D054AFF7152984FA00EBFA1C /* XPCKit.framework in Frameworks */,
+				65E26F8517136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,8 +1242,8 @@
 			files = (
 				D0904DEA152D717F003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39A4152ACD1300E30C43 /* Quartz.framework in Frameworks */,
-				D05D39A5152ACD1300E30C43 /* iMedia.framework in Frameworks */,
 				D05D39A6152ACD1300E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8A17136829000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,8 +1253,8 @@
 			files = (
 				D0904DEB152D717F003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39B5152ACD2400E30C43 /* Quartz.framework in Frameworks */,
-				D05D39B6152ACD2400E30C43 /* iMedia.framework in Frameworks */,
 				D05D39B7152ACD2400E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8217136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1120,9 +1264,9 @@
 			files = (
 				D0904DEC152D7180003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39C6152ACD3300E30C43 /* Quartz.framework in Frameworks */,
-				D05D39C7152ACD3300E30C43 /* iMedia.framework in Frameworks */,
 				D05D39C8152ACD3300E30C43 /* XPCKit.framework in Frameworks */,
 				D0904DD8152D6F57003FDD08 /* ObjectiveFlickr.framework in Frameworks */,
+				65E26F8317136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1132,8 +1276,8 @@
 			files = (
 				D0904DEF152D7181003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39D7152ACD5E00E30C43 /* Quartz.framework in Frameworks */,
-				D05D39D8152ACD5E00E30C43 /* iMedia.framework in Frameworks */,
 				D05D39D9152ACD5E00E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8617136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1143,8 +1287,8 @@
 			files = (
 				D0904DF0152D7182003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39E8152ACD6800E30C43 /* Quartz.framework in Frameworks */,
-				D05D39E9152ACD6800E30C43 /* iMedia.framework in Frameworks */,
 				D05D39EA152ACD6800E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8717136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,8 +1298,8 @@
 			files = (
 				D0904DF2152D7183003FDD08 /* Foundation.framework in Frameworks */,
 				D05D39F9152ACD8800E30C43 /* Quartz.framework in Frameworks */,
-				D05D39FA152ACD8800E30C43 /* iMedia.framework in Frameworks */,
 				D05D39FB152ACD8800E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8917136804000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1165,8 +1309,8 @@
 			files = (
 				D0904DF1152D7183003FDD08 /* Foundation.framework in Frameworks */,
 				D05D3A0C152AD0D000E30C43 /* Quartz.framework in Frameworks */,
-				D05D3A0D152AD0D000E30C43 /* iMedia.framework in Frameworks */,
 				D05D3A0E152AD0D000E30C43 /* XPCKit.framework in Frameworks */,
+				65E26F8817136804000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1186,8 +1330,8 @@
 			files = (
 				D0904DE8152D717E003FDD08 /* Foundation.framework in Frameworks */,
 				D0E69CD2151C5581002FE181 /* Quartz.framework in Frameworks */,
-				D0E96CFA1518C9BF004F3EE7 /* iMedia.framework in Frameworks */,
 				3089F94C151C91CE00D56DC0 /* XPCKit.framework in Frameworks */,
+				65E26F8C1713682A000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1197,8 +1341,8 @@
 			files = (
 				D0904DED152D7180003FDD08 /* Foundation.framework in Frameworks */,
 				D0F2DDC3152485130059DF8D /* Quartz.framework in Frameworks */,
-				D0F2DDC4152485130059DF8D /* iMedia.framework in Frameworks */,
 				D0F2DDC5152485130059DF8D /* XPCKit.framework in Frameworks */,
+				65E26F8417136803000994C3 /* iMedia.stub in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,6 +1433,9 @@
 		30FFEBED150A08DB0009C1D0 /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65E26F7E17136803000994C3 /* iMedia.stub */,
+				65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */,
+				65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */,
 				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
 				D0DA9AE0102EB7BD008EC9F9 /* Carbon.framework */,
 				30FFEBEE150A08DB0009C1D0 /* Foundation.framework */,
@@ -1303,6 +1450,27 @@
 				D0F2DBCE1098270F004280C1 /* libsqlite3.dylib */,
 			);
 			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		65E26F1E17135C95000994C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E26F2617135C95000994C3 /* XPCKit.framework */,
+				65E26F2817135C95000994C3 /* libXPCKit.a */,
+				65E26F2A17135C95000994C3 /* TestApp.app */,
+				65E26F2C17135C95000994C3 /* com.mustacheware.TestService.xpc */,
+				65E26F2E17135C95000994C3 /* XPCKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E26F3017135C97000994C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E26F3617135C97000994C3 /* ObjectiveFlickr.framework */,
+				65E26F3817135C97000994C3 /* libObjectiveFlickr.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8FCA063F12368367009072AE /* Aperture */ = {
@@ -2159,6 +2327,19 @@
 			buildRules = (
 			);
 			dependencies = (
+				65E26F8E1713685B000994C3 /* PBXTargetDependency */,
+				65E26F901713685B000994C3 /* PBXTargetDependency */,
+				65E26F921713685B000994C3 /* PBXTargetDependency */,
+				65E26F941713685B000994C3 /* PBXTargetDependency */,
+				65E26F961713685B000994C3 /* PBXTargetDependency */,
+				65E26F981713685B000994C3 /* PBXTargetDependency */,
+				65E26F9A1713685B000994C3 /* PBXTargetDependency */,
+				65E26F9C1713685B000994C3 /* PBXTargetDependency */,
+				65E26F9E1713685B000994C3 /* PBXTargetDependency */,
+				65E26FA01713685B000994C3 /* PBXTargetDependency */,
+				65E26FA21713685B000994C3 /* PBXTargetDependency */,
+				65E26F4617135D21000994C3 /* PBXTargetDependency */,
+				65E26F3C17135D1A000994C3 /* PBXTargetDependency */,
 			);
 			name = iMedia;
 			productInstallPath = "$(HOME)/Library/Frameworks";
@@ -2390,6 +2571,16 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* iMedia */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 65E26F3017135C97000994C3 /* Products */;
+					ProjectRef = 65E26F2F17135C97000994C3 /* ObjectiveFlickr.xcodeproj */;
+				},
+				{
+					ProductGroup = 65E26F1E17135C95000994C3 /* Products */;
+					ProjectRef = 65E26F1D17135C95000994C3 /* XPCKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8DC2EF4F0486A6940098B216 /* iMedia */,
@@ -2409,6 +2600,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		65E26F2617135C95000994C3 /* XPCKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XPCKit.framework;
+			remoteRef = 65E26F2517135C95000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F2817135C95000994C3 /* libXPCKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXPCKit.a;
+			remoteRef = 65E26F2717135C95000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F2A17135C95000994C3 /* TestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestApp.app;
+			remoteRef = 65E26F2917135C95000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F2C17135C95000994C3 /* com.mustacheware.TestService.xpc */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = com.mustacheware.TestService.xpc;
+			remoteRef = 65E26F2B17135C95000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F2E17135C95000994C3 /* XPCKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XPCKitTests.octest;
+			remoteRef = 65E26F2D17135C95000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F3617135C97000994C3 /* ObjectiveFlickr.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectiveFlickr.framework;
+			remoteRef = 65E26F3517135C97000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		65E26F3817135C97000994C3 /* libObjectiveFlickr.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveFlickr.a;
+			remoteRef = 65E26F3717135C97000994C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		30FFEBEA150A08DB0009C1D0 /* Resources */ = {
@@ -2893,6 +3136,74 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		65E26F3C17135D1A000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XPCKit;
+			targetProxy = 65E26F3B17135D1A000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F4617135D21000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ObjectiveFlickr (framework)";
+			targetProxy = 65E26F4517135D21000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F8E1713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0E96CEE1518C9BF004F3EE7 /* im.edia.Folder */;
+			targetProxy = 65E26F8D1713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F901713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30FFEBEB150A08DB0009C1D0 /* im.edia.iPhoto */;
+			targetProxy = 65E26F8F1713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F921713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D399D152ACD1300E30C43 /* im.edia.Aperture */;
+			targetProxy = 65E26F911713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F941713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D39AE152ACD2400E30C43 /* im.edia.Lightroom */;
+			targetProxy = 65E26F931713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F961713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D39BF152ACD3300E30C43 /* im.edia.Flickr */;
+			targetProxy = 65E26F951713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F981713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0F2DDBC152485130059DF8D /* im.edia.iTunes */;
+			targetProxy = 65E26F971713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F9A1713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D054AFEE152984FA00EBFA1C /* im.edia.GarageBand */;
+			targetProxy = 65E26F991713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F9C1713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D39D0152ACD5E00E30C43 /* im.edia.Safari */;
+			targetProxy = 65E26F9B1713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26F9E1713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D39E1152ACD6800E30C43 /* im.edia.Firefox */;
+			targetProxy = 65E26F9D1713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26FA01713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D3A05152AD0D000E30C43 /* im.edia.Chrome */;
+			targetProxy = 65E26F9F1713685B000994C3 /* PBXContainerItemProxy */;
+		};
+		65E26FA21713685B000994C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05D39F2152ACD8800E30C43 /* im.edia.FSEvents */;
+			targetProxy = 65E26FA11713685B000994C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		30421DE616A9943400311AC4 /* SandboxingKit.strings */ = {
 			isa = PBXVariantGroup;
@@ -3031,6 +3342,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3057,6 +3372,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3109,6 +3428,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3135,6 +3458,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3167,6 +3494,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3193,6 +3524,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3225,6 +3560,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3251,6 +3590,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3283,6 +3626,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3309,6 +3656,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3341,6 +3692,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3367,6 +3722,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3399,6 +3758,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3425,6 +3788,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3457,6 +3824,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3483,6 +3854,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3515,6 +3890,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3541,6 +3920,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3615,6 +3998,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3641,6 +4028,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3673,6 +4064,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3699,6 +4094,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SandBoxingKit\"",
+				);
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
