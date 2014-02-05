@@ -25,5 +25,6 @@
  */
 @property (retain) PhFacebook *facebook;
 
+- (id) revokeAccessToNode:(IMBNode *)node error:(NSError **)pError;
 
 @end

@@ -248,7 +248,6 @@ extern NSString *const IKImageBrowserCellPlaceHolderLayer __attribute__((weak_im
 //---------------------------------------------------------------------------------
 - (CALayer *) layerForType:(NSString*) type
 {
-    IMBObject* item = (IMBObject*) [self representedItem];
 	CGColorRef color;
 	
 	//retrieve some usefull rects

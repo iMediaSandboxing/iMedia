@@ -1068,7 +1068,7 @@ static NSMutableDictionary* sRegisteredNodeViewControllerClasses = nil;
      {
          if (!requestCanceled && !error) {
              for (IMBNode *affectedNode in affectedNodes) {
-                 [self.libraryController performSelector:inSelector withObject:inNode];
+                 [self.libraryController performSelector:inSelector withObject:affectedNode];
              }
          }
      }];
