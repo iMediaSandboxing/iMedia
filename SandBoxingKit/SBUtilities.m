@@ -208,7 +208,7 @@ CFTypeRef SBPreferencesCopyAppValue(CFStringRef inKey,CFStringRef inBundleIdenti
 
 
 /**
- returns a static semaphore of eight resources intended to restrain parallelity when dispatching events with GCD
+ returns an NSOperationQueue limited to 8 jobs, intended to restrain parallelity when dispatching events with GCD
  
  @Discussion
  We had instances where the Facebook parser hung up on us when about 60 some parallel requests were issued
@@ -216,14 +216,16 @@ CFTypeRef SBPreferencesCopyAppValue(CFStringRef inKey,CFStringRef inBundleIdenti
  
  Going beyond eight parallel resources did not seem to gain any better performance on any of the parsers.
  */
-dispatch_semaphore_t dispatch_semaphore()
+NSOperationQueue* constrainedTargetQueue()
 {
-	static dispatch_semaphore_t sSharedInstance = NULL;
+	static NSOperationQueue* sSharedInstance = NULL;
 	static dispatch_once_t sOnceToken = 0;
     
     dispatch_once(&sOnceToken,
                   ^{
-                      sSharedInstance = dispatch_semaphore_create(8);
+                     const NSInteger kMaximumThumbnailLoadingConcurrency = 8;
+                     sSharedInstance = [[NSOperationQueue alloc] init];
+                     [sSharedInstance setMaxConcurrentOperationCount:kMaximumThumbnailLoadingConcurrency];
                   });
     
  	return sSharedInstance;
@@ -283,10 +285,9 @@ void SBPerformSelectorAsync(id inConnection,id inTarget,SEL inSelector,id inObje
         id objectCopy = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:inObject]];
         
         dispatch_retain(returnHandlerQueue);
-        
-        dispatch_semaphore_wait(dispatch_semaphore(), DISPATCH_TIME_FOREVER);
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^()
-		{
+
+		[constrainedTargetQueue() addOperationWithBlock:^()
+  		{
             NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 			NSError* error = nil;
 			id result = nil;
@@ -312,8 +313,7 @@ void SBPerformSelectorAsync(id inConnection,id inTarget,SEL inSelector,id inObje
 				dispatch_release(returnHandlerQueue);
 			});
             [pool drain];
-            dispatch_semaphore_signal(dispatch_semaphore());
-	   });
+	   }];
     }
 }
 
