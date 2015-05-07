@@ -180,8 +180,11 @@
         }
 #if CREATE_MEDIA_OBJECTS_CONCURRENTLY
         dispatch_group_wait(dispatchGroup, DISPATCH_TIME_FOREVER);
-        dispatch_release(dispatchGroup);
-        dispatch_release(semaphore);
+#if !OS_OBJECT_USE_OBJC
+	// Only required for 10.7 deployment targets and earlier
+	dispatch_release(dispatchGroup);
+	dispatch_release(semaphore);
+#endif
 #endif
         STOP_MEASURE(2);
         LOG_MEASURED_TIME(2, @"IMBObjects creation for group %@", parentGroup.name);
