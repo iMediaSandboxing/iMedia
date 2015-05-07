@@ -102,9 +102,9 @@
         }
 
 #if !OS_OBJECT_USE_OBJC
-		// For targets requiring 10.8 or greater we don't need (and in fact can't use) dispatch_release,
-		// because it's handled automatically by ARC.
-		dispatch_release(instance.semaphore);
+	// For targets requiring 10.8 or greater we don't need (and in fact can't use) dispatch_release,
+	// because it's handled automatically by ARC.
+	dispatch_release(instance.semaphore);
 #endif
 
         return instance.valueForKey;
