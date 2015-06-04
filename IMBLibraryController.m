@@ -824,11 +824,17 @@ static NSMutableDictionary* sLibraryControllers = nil;
 	if (inOldNode == nil && inNewNode == nil) return;
 	
 	// Log an error if we are supposed to remove an old node, but it already removed from the tree...
-	
+
 	if (inOldNode != nil && inOldNode.parentNode == nil)
 	{
-		NSLog(@"%s inOldNode has already been removed. This was problably a race condition...",__FUNCTION__);
-		return;
+		// It's possible (in some contrived situations e.g. if a client app uses a very customized iMedia view),
+		// for a node to be both a top level node and contain media objects. In this case we want to avoid bailing
+		// out when the node doesn't have a parent, because it never will have a parent, but we still want to reload it.
+		if ([inOldNode isTopLevelNode] == NO)
+		{
+			NSLog(@"%s inOldNode has already been removed. This was problably a race condition...",__FUNCTION__);
+			return;
+		}
 	}
 	
 	if (inOldNode != nil && inOldNode.parentNode == nil)
