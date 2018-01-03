@@ -168,7 +168,7 @@
 
 - (NSString*) iMedia2PersistentResourceIdentifierPrefix
 {
-	return @"IMBLightroom3Parser";
+	return @"IMBLightroom4Parser";
 }
 
 @end

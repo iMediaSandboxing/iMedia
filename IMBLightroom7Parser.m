@@ -638,7 +638,7 @@
 - (FMDatabasePool*) createLibraryDatabasePool
 {
 	NSString* databasePath = [self.mediaSource path];
-	FMDatabasePool* databasePool = [[FMDatabasePool alloc] initWithPath:databasePath flags:SQLITE_OPEN_READONLY vfs:@"unix-none"];
+	FMDatabasePool* databasePool = [[FMDatabasePool alloc] initWithPath:databasePath flags:SQLITE_OPEN_READWRITE vfs:@"unix-none"];
 
 	return [databasePool autorelease];
 }
@@ -649,7 +649,7 @@
 	NSString* rootPath = [mainDatabasePath stringByDeletingPathExtension];
 	NSString* previewPackagePath = [[NSString stringWithFormat:@"%@ Previews", rootPath] stringByAppendingPathExtension:@"lrdata"];
 	NSString* previewDatabasePath = [[previewPackagePath stringByAppendingPathComponent:@"previews"] stringByAppendingPathExtension:@"db"];
-	FMDatabasePool* databasePool = [[FMDatabasePool alloc] initWithPath:previewDatabasePath flags:SQLITE_OPEN_READONLY vfs:@"unix-none"];
+	FMDatabasePool* databasePool = [[FMDatabasePool alloc] initWithPath:previewDatabasePath flags:SQLITE_OPEN_READWRITE vfs:@"unix-none"];
 
 	return [databasePool autorelease];
 }
