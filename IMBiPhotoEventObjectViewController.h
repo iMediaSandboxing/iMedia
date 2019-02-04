@@ -50,7 +50,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 #import <Cocoa/Cocoa.h>
-#import "IMBSkimmableObjectViewController.h"
+#import <iMedia/IMBSkimmableObjectViewController.h>
 
 
 @interface IMBiPhotoEventObjectViewController : IMBSkimmableObjectViewController {

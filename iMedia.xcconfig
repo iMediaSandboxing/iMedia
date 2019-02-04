@@ -40,3 +40,11 @@ DEVELOPMENT_TEAM = // "None"
 
 PROVISIONING_PROFILE = // "automatic" for Xcode 7
 PROVISIONING_PROFILE_SPECIFIER = // "automatic" for Xcode 8
+
+// This setting is deprecated and we should import files using
+// framework-based notation when necessary.
+ALWAYS_SEARCH_USER_PATHS = NO
+
+// This warning ensures we don't deviate from the framework-based
+// import style when it is appropriate to use it.
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES

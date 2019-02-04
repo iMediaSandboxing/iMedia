@@ -55,7 +55,7 @@
 
 #pragma mark HEADERS
 
-#import "IMBParserMessenger.h"
+#import <iMedia/IMBParserMessenger.h>
 
 
 //----------------------------------------------------------------------------------------------------------------------

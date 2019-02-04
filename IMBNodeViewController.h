@@ -70,8 +70,8 @@
 
 #pragma mark HEADERS
 
-#import "IMBOutlineView.h"
-#import "IMBNavigationController.h"
+#import <iMedia/IMBOutlineView.h>
+#import <iMedia/IMBNavigationController.h>
 
 
 //----------------------------------------------------------------------------------------------------------------------

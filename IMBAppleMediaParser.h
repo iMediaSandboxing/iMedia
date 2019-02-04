@@ -67,9 +67,8 @@
 #pragma mark HEADERS
 
 #import <Cocoa/Cocoa.h>
-#import "IMBParser.h"
-//#import "IMBSkimmableObjectViewController.h"
-#import "IMBNodeObject.h"
+#import <iMedia/IMBParser.h>
+#import <iMedia/IMBNodeObject.h>
 
 
 //----------------------------------------------------------------------------------------------------------------------
