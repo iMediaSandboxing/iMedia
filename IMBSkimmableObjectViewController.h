@@ -49,7 +49,7 @@
 
 //----------------------------------------------------------------------------------------------------------------------
 
-#import "IMBObjectViewController.h"
+#import <iMedia/IMBObjectViewController.h>
 
 #pragma mark ABSTRACT
 

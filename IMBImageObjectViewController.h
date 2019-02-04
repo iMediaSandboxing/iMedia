@@ -55,7 +55,7 @@
 
 #pragma mark HEADERS
 
-#import "IMBObjectViewController.h"
+#import <iMedia/IMBObjectViewController.h>
 
 
 //----------------------------------------------------------------------------------------------------------------------
