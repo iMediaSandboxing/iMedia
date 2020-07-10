@@ -140,6 +140,9 @@ extern NSString* kIMBExpandAndSelectNodeWithIdentifierNotification;
 - (NSImage*) icon;
 - (NSString*) displayName;
 
+- (void) _nodesWillChange;
+- (void) _nodesDidChange;
+
 // Delegate...
 
 @property (assign) id<IMBNodeViewControllerDelegate> delegate;
