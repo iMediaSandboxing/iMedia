@@ -1030,13 +1030,16 @@ static NSMutableDictionary* sRegisteredObjectViewControllerClasses = nil;
 	
 	NSArray* objects = ibObjectArrayController.arrangedObjects;
 	NSIndexSet* indexes = [ibIconView visibleItemIndexes];
-	NSUInteger index = [indexes firstIndex];
+	NSUInteger index = indexes != nil ? [indexes firstIndex] : NSNotFound;
 	
 	while (index != NSNotFound)
 	{
-		IMBObject* object = [objects objectAtIndex:index];
-		NSRect rect = [ibIconView itemFrameAtIndex:index];
-		[ibIconView addToolTipRect:rect owner:object userData:NULL];
+		if (index < objects.count)
+		{
+			NSRect rect = [ibIconView itemFrameAtIndex:index];
+			IMBObject* object = [objects objectAtIndex:index];
+			[ibIconView addToolTipRect:rect owner:object userData:NULL];
+		}
 		index = [indexes indexGreaterThanIndex:index];
 	}
 }
