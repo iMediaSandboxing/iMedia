@@ -57,13 +57,34 @@
 #import <iMedia/IMBPanelController.h>
 #import <iMedia/IMBParserController.h>
 #import <iMedia/IMBLibraryController.h>
+#import <iMedia/IMBAccessRightsController.h>
+
 #import <iMedia/IMBNodeViewController.h>
 #import <iMedia/IMBObjectViewController.h>
+#import <iMedia/IMBImageObjectViewController.h>
+#import <iMedia/IMBAudioObjectViewController.h>
+#import <iMedia/IMBMovieObjectViewController.h>
+#import <iMedia/IMBSkimmableObjectViewController.h>
+#import <iMedia/IMBiPhotoEventObjectViewController.h>
+#import <iMedia/IMBFaceObjectViewController.h>
+#import <iMedia/IMBAccessRightsViewController.h>
 
 // Model...
 
 #import <iMedia/IMBNode.h>
 #import <iMedia/IMBObject.h>
+
+// View
+
+#import <iMedia/IMBOutlineView.h>
+#import <iMedia/IMBNodeCell.h>
+#import <iMedia/IMBTableView.h>
+#import <iMedia/IMBDynamicTableView.h>
+#import <iMedia/IMBComboTableView.h>
+#import <iMedia/IMBComboTextCell.h>
+#import <iMedia/IMBTextFieldCell.h>
+#import <iMedia/IMBImageBrowserView.h>
+#import <iMedia/IMBImageBrowserCell.h>
 
 // Categories...
 
