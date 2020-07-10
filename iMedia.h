@@ -85,6 +85,9 @@
 #import <iMedia/IMBTextFieldCell.h>
 #import <iMedia/IMBImageBrowserView.h>
 #import <iMedia/IMBImageBrowserCell.h>
+#import <iMedia/IMBViewAppearance.h>
+#import <iMedia/IMBTableViewAppearance.h>
+#import <iMedia/IMBComboTableViewAppearance.h>
 
 // Categories...
 
