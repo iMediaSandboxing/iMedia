@@ -312,6 +312,7 @@ static NSString* kCurrentNodeKey = @"currentNode";
     }
 	else
 	{
+		[self setIsPlaying:NO];
 		self.audioPlayer = nil;
 	}
 }
