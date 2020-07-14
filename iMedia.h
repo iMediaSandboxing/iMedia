@@ -47,35 +47,74 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 
-// Common...
+// Common
 
 #import <iMedia/IMBCommon.h>
 #import <iMedia/IMBConfig.h>
 
-// Controllers...
+// Controllers
 
 #import <iMedia/IMBPanelController.h>
 #import <iMedia/IMBParserController.h>
 #import <iMedia/IMBLibraryController.h>
 #import <iMedia/IMBAccessRightsController.h>
+#import <iMedia/IMBFileSystemObserver.h>
 
 #import <iMedia/IMBNodeViewController.h>
+#import <iMedia/IMBImageNodeViewController.h>
+#import <iMedia/IMBAudioNodeViewController.h>
+#import <iMedia/IMBMovieNodeViewController.h>
+#import <iMedia/IMBLinkNodeViewController.h>
+
 #import <iMedia/IMBObjectViewController.h>
 #import <iMedia/IMBImageObjectViewController.h>
 #import <iMedia/IMBAudioObjectViewController.h>
 #import <iMedia/IMBMovieObjectViewController.h>
+#import <iMedia/IMBLinkObjectViewController.h>
 #import <iMedia/IMBSkimmableObjectViewController.h>
 #import <iMedia/IMBiPhotoEventObjectViewController.h>
 #import <iMedia/IMBFaceObjectViewController.h>
 #import <iMedia/IMBAccessRightsViewController.h>
 
-// Model...
+// Parsers
+
+#import <iMedia/IMBParserMessenger.h>
+#import <iMedia/IMBFolderParserMessenger.h>
+#import <iMedia/IMBImageFolderParserMessenger.h>
+#import <iMedia/IMBAudioFolderParserMessenger.h>
+#import <iMedia/IMBMovieFolderParserMessenger.h>
+#import <iMedia/IMBAppleMediaParserMessenger.h>
+#import <iMedia/IMBGarageBandParserMessenger.h>
+#import <iMedia/IMBSafariParserMessenger.h>
+#import <iMedia/IMBiPhotoParserMessenger.h>
+#import <iMedia/IMBiTunesParserMessenger.h>
+#import <iMedia/IMBLightroomParserMessenger.h>
+
+#import <iMedia/IMBParser.h>
+#import <iMedia/IMBImageFolderParser.h>
+#import <iMedia/IMBAudioFolderParser.h>
+#import <iMedia/IMBMovieFolderParser.h>
+
+// Model
 
 #import <iMedia/IMBNode.h>
+
 #import <iMedia/IMBObject.h>
+#import <iMedia/IMBNodeObject.h>
+#import <iMedia/IMBButtonObject.h>
+#import <iMedia/IMBFolderObject.h>
+#import <iMedia/IMBSmartFolderObject.h>
+#import <iMedia/IMBLinkObject.h>
+#import <iMedia/IMBSkimmableObject.h>
+#import <iMedia/IMBLightroomObject.h>
+#import <iMedia/IMBiPhotoEventNodeObject.h>
+
+#import <iMedia/IMBObjectFifoCache.h>
 
 // View
 
+#import <iMedia/IMBPanel.h>
+#import <iMedia/IMBProgressWindowController.h>
 #import <iMedia/IMBOutlineView.h>
 #import <iMedia/IMBNodeCell.h>
 #import <iMedia/IMBTableView.h>
@@ -89,9 +128,25 @@
 #import <iMedia/IMBTableViewAppearance.h>
 #import <iMedia/IMBComboTableViewAppearance.h>
 
-// Categories...
+// Categories
 
 #import <iMedia/NSPasteboard+iMedia.h>
+#import <iMedia/NSWorkspace+iMedia.h>
+#import <iMedia/NSView+iMedia.h>
+#import <iMedia/NSURL+iMedia.h>
+#import <iMedia/NSString+iMedia.h>
+#import <iMedia/NSKeyedArchiver+iMedia.h>
+#import <iMedia/NSImage+iMedia.h>
+#import <iMedia/NSFileManager+iMedia.h>
+#import <iMedia/NSDictionary+iMedia.h>
+#import <iMedia/NSData+SKExtensions.h>
+
+// Misc
+
+#import <iMedia/IMBDisableTitleToColorTransformer.h>
+#import <iMedia/IMBTimecodeTransformer.h>
+#import <iMedia/IMBMetadataTransformer.h>
+#import <iMedia/SBUtilities.h>
 
 
 //----------------------------------------------------------------------------------------------------------------------
