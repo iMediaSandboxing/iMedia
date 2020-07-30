@@ -204,6 +204,8 @@
 			CFArrayRef authors = MDItemCopyAttribute(item,kMDItemAuthors);
 			CFStringRef album = MDItemCopyAttribute(item,kMDItemAlbum);
 			CFStringRef comment = MDItemCopyAttribute(item,kMDItemFinderComment);
+			CFStringRef title = MDItemCopyAttribute(item,kMDItemTitle);
+			CFArrayRef whereFroms = MDItemCopyAttribute(item,kMDItemWhereFroms);
 
 			if (path)
 			{
@@ -222,6 +224,12 @@
 				[sound release];
 			}
 			
+			if (title)
+			{
+				[metadata setObject:(NSString*)title forKey:@"name"];
+				CFRelease(title);
+			}
+			
 			if (authors)
 			{
 				NSArray* artists = (NSArray*)authors;
@@ -233,6 +241,13 @@
 			{
 				[metadata setObject:(NSString*)album forKey:@"album"]; 
 				CFRelease(album);
+			}
+			
+			if (whereFroms)
+			{
+				NSArray* urls = (NSArray*)whereFroms;
+				if (urls.count > 0) [metadata setObject:[urls objectAtIndex:0] forKey:@"url"];
+				CFRelease(whereFroms);
 			}
 			
 			if (comment)
