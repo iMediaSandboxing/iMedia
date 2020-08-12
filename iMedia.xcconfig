@@ -15,11 +15,7 @@ GCC_PREPROCESSOR_DEFINITIONS[config=Release] = MAS=1
 GCC_OPTIMIZATION_LEVEL[config=Debug] = 0
 
 COPY_PHASE_STRIP[config=Debug][sdk=*] = NO
-
-//SKIP_INSTALL[config=Release][sdk=*] = YES
-SKIP_INSTALL_Debug = NO
-SKIP_INSTALL_Release = YES
-SKIP_INSTALL = $(SKIP_INSTALL_$(CONFIGURATION))
+SKIP_INSTALL[config=Release][sdk=*] = YES
 
 // Use "Mac App Store" code signing identity for both Debug and Release configurations
 
