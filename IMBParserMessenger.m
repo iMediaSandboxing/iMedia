@@ -382,21 +382,27 @@
 
 - (IMBNode*) populateNode:(IMBNode*)inNode error:(NSError**)outError
 {
+	NSError* error = nil;
+	IMBParser* parser = nil;
+	BOOL success = NO;
+	IMBNode* node = nil;
+	
     // Since inNode was most likely instantiated through -initWithCoder: (coming from the app)
     // its parser messenger is not set. Do it now.
     
     inNode.parserMessenger = self;
     
-	NSError* error = nil;
-	IMBParser* parser = [self parserWithIdentifier:inNode.parserIdentifier];
-	BOOL success = [parser populateNode:inNode error:&error];
-	
-	IMBNode* node = success ? inNode : nil;
-	
-	if (node)
+	@synchronized (inNode)
 	{
-		[self _setParserIdentifierWithParser:parser onNodeTree:node];
-		[self _setObjectIdentifierWithParser:parser onNodeTree:node];
+		parser = [self parserWithIdentifier:inNode.parserIdentifier];
+		success = [parser populateNode:inNode error:&error];
+		node = success ? inNode : nil;
+		
+		if (node)
+		{
+			[self _setParserIdentifierWithParser:parser onNodeTree:node];
+			[self _setObjectIdentifierWithParser:parser onNodeTree:node];
+		}
 	}
 	
 	if ((node.accessibility == kIMBResourceIsAccessible) && success == NO && error == nil)

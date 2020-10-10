@@ -550,50 +550,59 @@
 
 - (void) insertObject:(IMBNode*)inNode inSubnodesAtIndex:(NSUInteger)inIndex
 {
-	if (_subnodes == nil)
+	@synchronized (self)
 	{
-		self.atomic_subnodes = [NSMutableArray arrayWithCapacity:1];
-	}
-	
-	if (inIndex <= _subnodes.count)
-	{
-		[_subnodes insertObject:inNode atIndex:inIndex];
-		inNode.parentNode = self;
-	}
-	else 
-	{
-		NSLog(@"%s ERROR trying to insert node at illegal index %lu!",__FUNCTION__, (unsigned long)inIndex);
-	}
+		if (_subnodes == nil)
+		{
+			self.atomic_subnodes = [NSMutableArray arrayWithCapacity:1];
+		}
+		
+		if (inIndex <= _subnodes.count)
+		{
+			[_subnodes insertObject:inNode atIndex:inIndex];
+			inNode.parentNode = self;
+		}
+		else
+		{
+			NSLog(@"%s ERROR trying to insert node at illegal index %lu!",__FUNCTION__, (unsigned long)inIndex);
+		}
+ 	}
 }
 
 
 - (void) removeObjectFromSubnodesAtIndex:(NSUInteger)inIndex
 {
-	if (inIndex < _subnodes.count)
+	@synchronized (self)
 	{
-		IMBNode* node = [_subnodes objectAtIndex:inIndex];
-		node.parentNode = nil;
-		[_subnodes removeObjectAtIndex:inIndex];
-	}
-	else 
-	{
-		NSLog(@"%s ERROR trying to remove node at illegal index %lu!",__FUNCTION__, (unsigned long)inIndex);
+		if (inIndex < _subnodes.count)
+		{
+			IMBNode* node = [_subnodes objectAtIndex:inIndex];
+			node.parentNode = nil;
+			[_subnodes removeObjectAtIndex:inIndex];
+		}
+		else
+		{
+			NSLog(@"%s ERROR trying to remove node at illegal index %lu!",__FUNCTION__, (unsigned long)inIndex);
+		}
 	}
 }
 
 
 - (void) replaceObject:(IMBNode*)inNode inSubnodesAtIndex:(NSUInteger)inIndex
 {
-	if (inIndex < _subnodes.count)
+	@synchronized (self)
 	{
-		IMBNode* node = [_subnodes objectAtIndex:inIndex];
-		node.parentNode = nil;
-		[_subnodes replaceObjectAtIndex:inIndex withObject:inNode];
-		inNode.parentNode = self;
-	}
-	else 
-	{
-		NSLog(@"%s ERROR trying to replace node at illegal index!",__FUNCTION__);
+		if (inIndex < _subnodes.count)
+		{
+			IMBNode* node = [_subnodes objectAtIndex:inIndex];
+			node.parentNode = nil;
+			[_subnodes replaceObjectAtIndex:inIndex withObject:inNode];
+			inNode.parentNode = self;
+		}
+		else
+		{
+			NSLog(@"%s ERROR trying to replace node at illegal index!",__FUNCTION__);
+		}
 	}
 }
 
