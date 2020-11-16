@@ -3659,7 +3659,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3681,7 +3680,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3691,7 +3689,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3707,7 +3704,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3717,7 +3713,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3739,7 +3734,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3749,7 +3743,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3765,7 +3758,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3795,7 +3787,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3817,7 +3808,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3827,7 +3817,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3843,7 +3832,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3853,7 +3841,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3875,7 +3862,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3885,7 +3871,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3901,7 +3886,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3911,7 +3895,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3933,7 +3916,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3943,7 +3925,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -3959,7 +3940,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -3969,7 +3949,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3991,7 +3970,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4001,7 +3979,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4017,7 +3994,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4027,7 +4003,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4049,7 +4024,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4059,7 +4033,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4075,7 +4048,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4085,7 +4057,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4107,7 +4078,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4117,7 +4087,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4133,7 +4102,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4143,7 +4111,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4165,7 +4132,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4175,7 +4141,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4191,7 +4156,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4201,7 +4165,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4223,7 +4186,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4233,7 +4195,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4249,7 +4210,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4265,7 +4225,6 @@
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks /Library/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -4287,7 +4246,6 @@
 				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks /Library/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -4303,7 +4261,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4325,7 +4282,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
@@ -4336,7 +4292,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4352,7 +4307,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
@@ -4363,7 +4317,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -4385,7 +4338,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
@@ -4395,7 +4347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_ENTITLEMENTS = "$(TARGET_NAME).entitlements";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -4411,7 +4362,6 @@
 				INFOPLIST_FILE = "SandBoxingKit/SBService-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../../../../Frameworks /Library/Frameworks";
 				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xpc;
 			};
