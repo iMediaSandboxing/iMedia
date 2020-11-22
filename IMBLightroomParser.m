@@ -157,6 +157,13 @@ static NSArray* sSupportedImageUTIs = nil;
         
         NSURL *dataURL = [NSURL fileURLWithPath:dataPath isDirectory:YES];
         
+
+		NSURL *resolvedDataURL = [dataURL imb_URLByResolvingSymlinksAndBookmarkFilesInPath];
+		if (resolvedDataURL != nil)
+		{
+			dataURL = resolvedDataURL;
+		}
+
         NSNumber *isDirectory;
         if (![dataURL getResourceValue:&isDirectory forKey:NSURLIsDirectoryKey error:NULL] || ![isDirectory boolValue])
         {
