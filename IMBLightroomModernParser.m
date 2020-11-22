@@ -449,6 +449,7 @@
 
 - (NSString*) folderNodesQuery
 {
+	// Note: Lightroom Classic CC v10 has introduced a parentId column
 	NSString* query =
 		@" SELECT id_local, pathFromRoot"
 		@" FROM AgLibraryFolder"
