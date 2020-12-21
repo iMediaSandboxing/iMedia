@@ -324,6 +324,11 @@
 
 - (NSURL *)imb_URLByResolvingBookmarkFilesInPath;
 {
+	if ([[self pathComponents] count] < 2)
+	{
+		return self;
+	}
+
     // Resolve any bookmarks higher up the chain first
     NSURL *parent = [self URLByDeletingLastPathComponent];
     if (parent != self)

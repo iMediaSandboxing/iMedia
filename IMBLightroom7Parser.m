@@ -66,6 +66,7 @@
 #import "NSData+SKExtensions.h"
 #import "NSFileManager+iMedia.h"
 #import "NSImage+iMedia.h"
+#import "NSURL+iMedia.h"
 #import "NSWorkspace+iMedia.h"
 #import "SBUtilities.h"
 #import <Quartz/Quartz.h>
@@ -127,7 +128,7 @@
 		if (databaseVersionLong < 700003) {
 			return NO;
 		}
-		else if (databaseVersionLong > 900000) {
+		else if (databaseVersionLong >= 1100000) {
 			return NO;
 		}
         
@@ -668,7 +669,17 @@
     NSString* rootPath = [mainDatabasePath stringByDeletingPathExtension];
     NSString* previewPackagePath = [[NSString stringWithFormat:@"%@ Previews", rootPath] stringByAppendingPathExtension:@"lrdata"];
     NSString* previewDatabasePath = [[previewPackagePath stringByAppendingPathComponent:@"previews"] stringByAppendingPathExtension:@"db"];
-    
+
+	if (previewDatabasePath != nil) {
+		NSURL* previewDatabaseURL = [NSURL fileURLWithPath:previewDatabasePath isDirectory:NO];
+
+		previewDatabaseURL = [previewDatabaseURL imb_URLByResolvingSymlinksAndBookmarkFilesInPath];
+
+		if (previewDatabaseURL != nil) {
+			previewDatabasePath = [previewDatabaseURL path];
+		}
+	}
+
     FMDatabase *db = [FMDatabase databaseWithPath:previewDatabasePath];
 #if SQLITE_VERSION_NUMBER >= 3005000
     BOOL success = [db openWithFlags:SQLITE_OPEN_READONLY vfs:@"unix-none"];
