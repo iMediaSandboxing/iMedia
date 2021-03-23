@@ -66,8 +66,7 @@ extern NSString* IMBIsDefaultAppearanceAttributeName;
     IMBTableViewAppearance *_appearance;
 }
 
-@property (retain) NSString* draggingPrompt;
-@property (retain) IMBTextFieldCell* textCell;
+@property (retain) NSTextField* draggingPromptTextField;
 @property (readonly) IMBTableViewAppearance *imb_Appearance;
 
 - (IMBNode*) nodeAtRow:(NSInteger)inRow;
