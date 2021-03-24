@@ -163,12 +163,6 @@
 	CGFloat viewHeight = scrollView.contentView.bounds.size.height;
 	CGFloat dataHeight = self.rowHeight * self.numberOfRows;
 	BOOL shouldPrompt = acceptsFiles && (dataHeight+MARGIN_BELOW_DATA <= viewHeight);
-//	if ((shouldPrompt == NO) && (self.draggingPromptTextField != nil)) {
-//		[self.draggingPromptTextField removeFromSuperview];
-//		[self.draggingPromptTextField release];
-//		self.draggingPromptTextField = nil;
-//		[[self window] recalculateKeyViewLoop];
-//	} else if (shouldPrompt) {
 	if (shouldPrompt || (self.draggingPromptTextField != nil)) {
 		// Create the text field as needed
 		if (self.draggingPromptTextField == nil) {
