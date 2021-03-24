@@ -163,11 +163,13 @@
 	CGFloat viewHeight = scrollView.contentView.bounds.size.height;
 	CGFloat dataHeight = self.rowHeight * self.numberOfRows;
 	BOOL shouldPrompt = acceptsFiles && (dataHeight+MARGIN_BELOW_DATA <= viewHeight);
-	if ((shouldPrompt == NO) && (self.draggingPromptTextField != nil)) {
-		[self.draggingPromptTextField removeFromSuperview];
-		[self.draggingPromptTextField release];
-		self.draggingPromptTextField = nil;
-	} else if (shouldPrompt) {
+//	if ((shouldPrompt == NO) && (self.draggingPromptTextField != nil)) {
+//		[self.draggingPromptTextField removeFromSuperview];
+//		[self.draggingPromptTextField release];
+//		self.draggingPromptTextField = nil;
+//		[[self window] recalculateKeyViewLoop];
+//	} else if (shouldPrompt) {
+	if (shouldPrompt || (self.draggingPromptTextField != nil)) {
 		// Create the text field as needed
 		if (self.draggingPromptTextField == nil) {
 			NSString* promptText = NSLocalizedStringWithDefaultValue(
@@ -191,6 +193,8 @@
 			self.draggingPromptTextField.cell = textCell;
 
 			self.draggingPromptTextField.stringValue = promptText;
+			self.draggingPromptTextField.editable = NO;
+			self.draggingPromptTextField.selectable = NO;
 
 			const CGFloat MARGIN_FROM_BOTTOM = 10.0;
 			[scrollView addFloatingSubview:self.draggingPromptTextField forAxis:NSEventGestureAxisVertical];
@@ -202,7 +206,7 @@
 		NSColor* draggingPromptColor = [NSColor grayColor];
 
 		CGFloat fadeHeight = MIN(viewHeight-dataHeight,MARGIN_BELOW_DATA+FADE_AREA) - MARGIN_BELOW_DATA;
-		CGFloat alpha = (float)fadeHeight / FADE_AREA;
+		CGFloat alpha = shouldPrompt ? (float)fadeHeight / FADE_AREA : 0.0;
 
 		// If header has a customized color then use it but with 0.6 of its alpha value
 
