@@ -201,7 +201,12 @@
 	{
 		titleRect.origin.x -= 3.0;
 		titleRect.size.height -= kTextHeightAdjust;
-	}
+
+        if (@available(macOS 11, *))
+        {
+            titleRect.size.height += 3;
+        }
+}
 	else
 	{
 		titleRect.origin.x += kTextOriginXOffset + kIconImageSize + kTextOriginXOffset;
@@ -213,6 +218,11 @@
 		{
 			titleRect.size.width -= kIconImageSize + kTextOriginXOffset;
 		}
+        
+        if (@available(macOS 11, *))
+        {
+            titleRect.origin.y += 2;
+        }
 	}
 
 	return titleRect;
