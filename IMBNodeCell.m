@@ -219,7 +219,7 @@
 			titleRect.size.width -= kIconImageSize + kTextOriginXOffset;
 		}
         
-        if (@available(macOS 11, *))
+        if (@available(macOS 10.15, *))
         {
             titleRect.origin.y += 2;
         }
