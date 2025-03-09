@@ -69,8 +69,7 @@
 
 @implementation IMBOutlineView
 
-@synthesize draggingPrompt = _draggingPrompt;
-@synthesize textCell = _textCell;
+@synthesize draggingPromptTextField = _draggingPromptTextField;
 @synthesize imb_Appearance = _appearance;
 
 - (void)setImb_Appearance:(IMBTableViewAppearance *)inAppearance
@@ -119,9 +118,8 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 
 	IMBRelease(_subviewsInVisibleRows);
-	IMBRelease(_draggingPrompt);
-	IMBRelease(_textCell);
-    
+	IMBRelease(_draggingPromptTextField);
+
     if (_appearance)
     {
         [_appearance unsetView];
@@ -137,20 +135,7 @@
 
 - (void) awakeFromNib
 {
-	self.draggingPrompt = NSLocalizedStringWithDefaultValue(
-		@"IMBOutlineView.draggingPrompt",
-		nil,IMBBundle(),
-		@"Drag additional folders here",
-		@"String that is displayed in the IMBOutlineView");
-
-	CGFloat size = [NSFont systemFontSizeForControlSize:NSSmallControlSize];
-	NSFont* font = [NSFont boldSystemFontOfSize:size];
-	
-	self.textCell = [[[IMBTextFieldCell alloc] initTextCell:@""] autorelease];
-	[self.textCell setAlignment:NSCenterTextAlignment];
-	[self.textCell setVerticalAlignment:kIMBBottomTextAlignment];
-	[self.textCell setFont:font];
-	[self.textCell setTextColor:[NSColor grayColor]];
+	[self updateDraggingPrompt];
 
 	// We need to save preferences before tha app quits...
 	
@@ -167,6 +152,85 @@
 		object:nil];
 }
 
+- (void) updateDraggingPrompt
+{
+	BOOL acceptsFiles = [[self registeredDraggedTypes] containsObject:NSFilenamesPboardType];
+	NSScrollView* scrollView = self.enclosingScrollView;
+
+	// Draw the prompt only when the content doesn't fill the view
+	const CGFloat MARGIN_BELOW_DATA = 20.0;
+	const CGFloat FADE_AREA = 20.0;
+	CGFloat viewHeight = scrollView.contentView.bounds.size.height;
+	CGFloat dataHeight = self.rowHeight * self.numberOfRows;
+	BOOL shouldPrompt = acceptsFiles && (dataHeight+MARGIN_BELOW_DATA <= viewHeight);
+	if (shouldPrompt || (self.draggingPromptTextField != nil)) {
+		// Create the text field as needed
+		if (self.draggingPromptTextField == nil) {
+			NSString* promptText = NSLocalizedStringWithDefaultValue(
+			 @"IMBOutlineView.draggingPrompt",
+			 nil,IMBBundle(),
+			 @"Drag additional folders here to add them to the media browser.",
+			 @"String that is displayed in the IMBOutlineView");
+
+			CGFloat fontSize = [NSFont systemFontSizeForControlSize:NSControlSizeSmall];
+			NSFont* promptFont = [NSFont boldSystemFontOfSize:fontSize];
+
+			NSRect draggingPromptFrame = [[self enclosingScrollView] bounds];
+			draggingPromptFrame.size.height = [promptText sizeWithAttributes:@{NSFontAttributeName: promptFont}].height;
+			self.draggingPromptTextField = [[NSTextField alloc] initWithFrame:draggingPromptFrame];
+
+			IMBTextFieldCell* textCell = [[[IMBTextFieldCell alloc] initTextCell:promptText] autorelease];
+			[textCell setAlignment:NSTextAlignmentCenter];
+			[textCell setVerticalAlignment:kIMBBottomTextAlignment];
+			[textCell setFont:promptFont];
+			[textCell setTextColor:[NSColor grayColor]];
+			self.draggingPromptTextField.cell = textCell;
+
+			self.draggingPromptTextField.stringValue = promptText;
+			self.draggingPromptTextField.editable = NO;
+			self.draggingPromptTextField.selectable = NO;
+
+			const CGFloat MARGIN_FROM_BOTTOM = 10.0;
+			[scrollView addFloatingSubview:self.draggingPromptTextField forAxis:NSEventGestureAxisVertical];
+			self.draggingPromptTextField.translatesAutoresizingMaskIntoConstraints = NO;
+			[scrollView addConstraint:[NSLayoutConstraint constraintWithItem:self.draggingPromptTextField attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:scrollView attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0]];
+			[scrollView addConstraint:[NSLayoutConstraint constraintWithItem:self.draggingPromptTextField attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:scrollView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:-MARGIN_FROM_BOTTOM]];
+		}
+
+		NSColor* draggingPromptColor = [NSColor grayColor];
+
+		CGFloat fadeHeight = MIN(viewHeight-dataHeight,MARGIN_BELOW_DATA+FADE_AREA) - MARGIN_BELOW_DATA;
+		CGFloat alpha = shouldPrompt ? (float)fadeHeight / FADE_AREA : 0.0;
+
+		// If header has a customized color then use it but with 0.6 of its alpha value
+
+		NSColor* appearanceTextColor = [self.imb_Appearance.sectionHeaderTextAttributes objectForKey:NSForegroundColorAttributeName];
+		if (appearanceTextColor) {
+			CGFloat appearanceAlpha = [appearanceTextColor alphaComponent];
+			draggingPromptColor = [appearanceTextColor colorWithAlphaComponent:appearanceAlpha * 0.6 * alpha];
+		} else {
+			CGFloat whiteValue = 0.66667;
+			if (@available(macOS 10.14, *)) {
+				BOOL isDarkMode = [[[self effectiveAppearance] bestMatchFromAppearancesWithNames:@[NSAppearanceNameDarkAqua, NSAppearanceNameAqua]] isEqualToString:@"NSAppearanceNameDarkAqua"];
+				whiteValue = isDarkMode ? 1.0 : 0.66667;
+			}
+			draggingPromptColor = [NSColor colorWithCalibratedWhite:whiteValue alpha:alpha];
+		}
+		self.draggingPromptTextField.textColor = draggingPromptColor;
+	}
+}
+
+- (void)registerForDraggedTypes:(NSArray<NSPasteboardType> *)newTypes
+{
+	[super registerForDraggedTypes:newTypes];
+	[self updateDraggingPrompt];
+}
+
+- (void)unregisterDraggedTypes
+{
+	[super unregisterDraggedTypes];
+	[self updateDraggingPrompt];
+}
 
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -211,6 +275,11 @@
 	[self showProgressWheels];
 }
 
+- (void)resizeSubviewsWithOldSize:(NSSize)oldSize
+{
+	[super resizeSubviewsWithOldSize:oldSize];
+	[self updateDraggingPrompt];
+}
 
 //----------------------------------------------------------------------------------------------------------------------
 
@@ -329,40 +398,6 @@
 	// First draw the NSOutlineView...
 	
 	[super drawRect:inRect];
-	
-	// Then draw the prompt string at the bottom if required...
-	
-	if ([[self registeredDraggedTypes] containsObject:NSFilenamesPboardType])
-	{
-		const CGFloat MARGIN_BELOW = 20.0;
-		const CGFloat FADE_AREA = 20.0;
-		CGFloat viewHeight = self.bounds.size.height;
-		CGFloat dataHeight = self.rowHeight * self.numberOfRows;	
-		
-		if (dataHeight+MARGIN_BELOW <= viewHeight)
-		{
-			CGFloat fadeHeight = MIN(viewHeight-dataHeight,MARGIN_BELOW+FADE_AREA) - MARGIN_BELOW;
-			CGFloat alpha = (float)fadeHeight / FADE_AREA;
-			
-			NSTextFieldCell* textCell = self.textCell;
-            [textCell setStringValue:self.draggingPrompt];
-            NSColor* draggingPromptColor = nil;
-            
-            // If header has a customized color then use it but with 0.6 of its alpha value
-            
-            NSColor* appearanceTextColor = [self.imb_Appearance.sectionHeaderTextAttributes objectForKey:NSForegroundColorAttributeName];
-            if (appearanceTextColor) {
-                CGFloat appearanceAlpha = [appearanceTextColor alphaComponent];
-                draggingPromptColor = [appearanceTextColor colorWithAlphaComponent:appearanceAlpha * 0.6 * alpha];
-            } else {
-                draggingPromptColor = [NSColor colorWithCalibratedWhite:0.66667 alpha:alpha];
-            }
-            [textCell setTextColor:draggingPromptColor];
-			
-			NSRect textRect = NSInsetRect([self visibleRect],12.0,8.0);
-			[textCell drawWithFrame:textRect inView:self];
-		}
-	}
 }
 
 
